@@ -1,5 +1,5 @@
 import { Navigate, useLocation } from "react-router-dom"
-import { useContext } from "react/cjs/react.development"
+import { useContext } from "react"
 import { AuthContext } from "../components/auth/authContext"
 
 export const PrivateRoute = ({children}) => {
@@ -7,6 +7,7 @@ export const PrivateRoute = ({children}) => {
     const {pathname, search} = useLocation()
    
     localStorage.setItem('lastLocation',  pathname + search)
+    console.log(pathname + search)
    
 
    
