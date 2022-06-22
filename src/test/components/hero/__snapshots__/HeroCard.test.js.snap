@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`vamos a probar <HeroCard /> debe hacer match con el snapshot 1`] = `
+<div
+  className="col"
+>
+  <div
+    className="card"
+    style={
+      Object {
+        "height": 300,
+      }
+    }
+  >
+    <div
+      className="row no-gutters"
+    >
+      <div
+        className="col-4 "
+      >
+        <img
+          alt="Batman"
+          className="card-img-top"
+          src="/statics/images/dc-batman.jpg"
+        />
+      </div>
+      <div
+        className="col-8"
+      >
+        <div
+          className="card-body"
+        >
+          <h5
+            className="card-title"
+          >
+            Batman
+          </h5>
+          <p
+            className="card-text"
+          >
+            Bruce Wayne
+          </p>
+          <p
+            className="card-text"
+          >
+            <small
+              className="text-muted"
+            >
+              Detective Comics #27
+            </small>
+          </p>
+          <Link
+            to="/hero/dc-batman"
+          >
+            Ver más ...
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

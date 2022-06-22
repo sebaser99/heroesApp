@@ -1,24 +1,45 @@
+import { useContext } from "react"
 import { useNavigate } from "react-router-dom"
+import { AuthContext } from "../auth/authContext"
+import { types } from "../types/types"
+import './login-screen.css';
 
 export const LoginScreen = () => {
     const navigate = useNavigate()
+    const { dispatch} = useContext(AuthContext)
+    
 
     const handleLogin = ()=>{
-        navigate('/', {
+      
+        const action = {
+            type: types.login,
+            payload:{
+                name: "Sebastian Rodriguez"
+            }
+        }
+
+        dispatch(action)
+
+        const lastPath = localStorage.getItem('lastLocation') || '/marvel';
+        
+        navigate(lastPath, {
             replace: true
         });
     }
 
     return (
-        <div className="container mt-5">
+        <div className="contenedor">
+            <div className="box">
 
-            <h1>Login Screen</h1>
-            <hr/>
-            <button className='btn btn-primary'
-                    onClick={handleLogin}>
-                Login
-            </button>
-            
+                <h3 className="mb-4">Ingresa a Heroes App</h3>
+                
+                <button className='btn btn-warning'
+                        onClick={handleLogin}>
+                    Login
+                </button>
+                
+            </div>
+
         </div>
     )
 }

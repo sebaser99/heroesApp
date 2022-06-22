@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`vamos a probar <SearchScreen /> debe hacer match con el snapshot 1`] = `
+<div>
+  <h1>
+    Búsqueda
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Buscar
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Buscar"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-outline-primary mt-1 btn-block"
+          type="submit"
+        >
+          Buscar ...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <div
+        className="alert alert-info"
+      >
+        Realiza una búsqueda
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`vamos a probar <SearchScreen /> debe mostrar a batman y el input con el valor del query string 1`] = `
+<div>
+  <h1>
+    Búsqueda
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Buscar
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Buscar"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-outline-primary mt-1 btn-block"
+          type="submit"
+        >
+          Buscar ...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <div
+        className="col"
+      >
+        <div
+          className="card"
+          style={
+            Object {
+              "height": 300,
+            }
+          }
+        >
+          <div
+            className="row no-gutters"
+          >
+            <div
+              className="col-4 "
+            >
+              <img
+                alt="Batman"
+                className="card-img-top"
+                src="/statics/images/dc-batman.jpg"
+              />
+            </div>
+            <div
+              className="col-8"
+            >
+              <div
+                className="card-body"
+              >
+                <h5
+                  className="card-title"
+                >
+                  Batman
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Bruce Wayne
+                </p>
+                <p
+                  className="card-text"
+                >
+                  <small
+                    className="text-muted"
+                  >
+                    Detective Comics #27
+                  </small>
+                </p>
+                <a
+                  href="/hero/dc-batman"
+                  onClick={[Function]}
+                >
+                  Ver más ...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`vamos a probar <SearchScreen /> debe mostrar a un mensaje de error al enviar un heroe que no existe 1`] = `
+<div>
+  <h1>
+    Búsqueda
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Buscar
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Buscar"
+          type="text"
+          value="batman444"
+        />
+        <button
+          className="btn btn-outline-primary mt-1 btn-block"
+          type="submit"
+        >
+          Buscar ...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <div
+        className="alert alert-danger"
+      >
+        No hay resultados 
+        batman444
+      </div>
+    </div>
+  </div>
+</div>
+`;

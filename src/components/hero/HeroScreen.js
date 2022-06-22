@@ -1,9 +1,12 @@
 import { useMemo } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { heroesImages } from "../../helpers/heroImages";
 import { getHeroById } from "../../selectors/getHeroById";
+   
+//styles
+import  './hero-card.css';
 
-
-export const Hero = () => {
+export const HeroScreen = () => {
     const {heroId} = useParams()
     const hero = useMemo(()=> getHeroById(heroId), [heroId]); 
     const navigate = useNavigate()
@@ -22,12 +25,13 @@ export const Hero = () => {
         navigate(-1)
     }
 
-    const imagePath = `/statics/images/${id}.jpg`
+    // const imagePath = `/statics/images/${id}.jpg`
     return (
         <div className="row mt-5">
             <div className="col-4">
                 <img 
-                    src={imagePath}
+                    // src={imagePath} //de esta forma importamos si las imágenes están en la carpeta public
+                    src={heroesImages(`./${id}.jpg`)}
                     alt={superhero}
                     className="img-thumbnail animate__animated animate__bounceInLeft"
                 />
@@ -44,7 +48,7 @@ export const Hero = () => {
                 <p>{characters}</p>
 
                 <button
-                    className="btn btn-outline-info"
+                    className="btn btn-outline-dark"
                     onClick={handleClick}
                 >Regresar</button>
 
