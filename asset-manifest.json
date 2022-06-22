@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/heroesApp/static/css/main.14e73786.css",
-    "main.js": "/heroesApp/static/js/main.94366de7.js",
+    "main.js": "/heroesApp/static/js/main.4e9ad8bc.js",
     "static/media/dc-wonder.jpg": "/heroesApp/static/media/dc-wonder.970ba2d62a4636ff6afb.jpg",
     "static/media/dc-flash.jpg": "/heroesApp/static/media/dc-flash.b3922f25f3765970d74c.jpg",
     "static/media/dc-martian.jpg": "/heroesApp/static/media/dc-martian.78565f7df6238ef8a601.jpg",
@@ -24,10 +24,10 @@
     "static/media/dc-robin.jpg": "/heroesApp/static/media/dc-robin.ea4afe99ecbc5480b0e3.jpg",
     "index.html": "/heroesApp/index.html",
     "main.14e73786.css.map": "/heroesApp/static/css/main.14e73786.css.map",
-    "main.94366de7.js.map": "/heroesApp/static/js/main.94366de7.js.map"
+    "main.4e9ad8bc.js.map": "/heroesApp/static/js/main.4e9ad8bc.js.map"
   },
   "entrypoints": [
     "static/css/main.14e73786.css",
-    "static/js/main.94366de7.js"
+    "static/js/main.4e9ad8bc.js"
   ]
 }
